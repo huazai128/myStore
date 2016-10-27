@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head >
+	<title>CMS后台管理</title>
+	<link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<nav >
+	<a href="/" class="logo">华仔后台管理</a>
+	<div class="navs">
+		<a href="/user" class="users">编辑用户</a>
+	</div>
+	<div class="user"><span><%= username %></span><a href="/logout" class="logout">退出</a></div>
+</nav>
+
+
+<div class="container" ng-controller="myCtrl">
+	<div class="img-list">
+		<ul>
+			<li class="listItem" ng-repeat="photo in photos">
+				<a  ng-click="setPhoto(photo._id)"><img class="item" ng-src="../images/{{photo.filename}}"></a>
+				<p>标题:{{photo.title}}</p>
+			</li>
+		</ul>
+	</div>
+	<div class="photoContainer">
+		<div class="photo-left">
+			<p>{{photo.title}}</p>
+			<img ng-src="../images/{{photo.filename}}">
+		</div>
+		<!-- ng-init:用于初始化值 -->
+		<div class="photo-right" ng-init="addComment = false;replySubject='';replyBody=''">
+			<div class="comment" ng-include="'/static/comment_thread.html'"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="page" ng-controller="pageContrl">
+	<!-- ng-init:用于初始化值 -->
+		<div class="pageComment" ng-init="addComment = false;replySubject='';replyBody = ''">
+			<div class="comment" ng-include="'/static/comment_thread.html'"></div>
+		</div>
+</div>
+<script src="http://code.angularjs.org/1.2.9/angular.js"></script>
+<script type="text/javascript" src="/static/js/comment_app.js"></script>
+</body>
+</html>

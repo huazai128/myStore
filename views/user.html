@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>CMS后台管理</title>
+	<link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<nav>
+	<a href="/" class="logo">华仔后台管理</a>
+	<div class="navs">
+		<a href="/user" class="users">编辑用户</a>
+	</div>
+	<div class="user"><span><%= username %></span><a href="/logout" class="logout">退出</a></div>
+</nav>
+<div class="save-container" ng-controller="myCtrl">
+	<p>user</p>
+	<form method="POST" action="/user/update">
+		<div class="form-group">
+			<label>Username:</label>
+			<input type="text" name="username" ng-model="user.username" placeholder="输入您的用户名">
+		</div>
+		<div class="form-group">
+			<label>Email:</label>
+			<input type="email" name="email" ng-model="user.email" placeholder="输入您的邮箱">
+		</div>
+		<div class="form-group">
+			<label>Color:</label>
+			<input type="text" name="color" ng-model="user.color" placeholder="输入您的密码">
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Save" class="save">
+		</div>
+	</form>
+	<form method="POST" action="/user/delete">
+		<input type="submit" value="Delete User" class="delete"></form>
+	</form>
+	<%= msg %>
+</div>
+<script src="http://code.angularjs.org/1.2.9/angular.js"></script>
+<script type="text/javascript" src="/static/js/my_app.js"></script>
+</body>
+</html> 

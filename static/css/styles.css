@@ -1,0 +1,213 @@
+
+body{
+	background: #00BCD4;
+	font-size: 12px;
+	font-weight: simsun,Arial,Lucida Grande,Verdana,Lucida,Helvetica,sans-serif;
+/*
+	display: -webkit-box;
+	display: -moz-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	justify-content: center;
+	-webkit-justify-content: center;
+
+	align-items: center;
+	-webkit-align-items:center;
+
+	-webkit-box-align: center;
+	-moz-flex-align : center;
+
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+*/}
+a{text-decoration: none;color: #fff;}
+.form-container{
+	width:300px;
+	height: auto;
+	padding: 20px;
+	margin: 20px auto;
+	text-align: center;
+}
+.form-header{
+	font-size: 20px;	
+}
+.form-group{
+	margin-top: 15px;
+}
+.form-group label{
+	display: inline-block;
+	width:80px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.form-group input{
+	width: 193px;
+	height: 30px;
+	padding: 0 5px;
+	outline: 0;
+	border-radius: 4px;
+}
+.form-container a{
+	display: inline-block;
+	width: 100px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background: #0a7b71;
+	margin: 0px auto;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px #0a7b71;
+}
+.form-inline input{
+	display: inline-block;
+	width: 100px;
+	height: 32px;
+	background: #0a7b71;
+	margin: 15px auto;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px #0a7b71;
+	border: 0;
+	outline: 0;
+	color: #fff;
+}
+nav{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 46px;
+	background: #075c67;
+}
+nav .logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 30px;
+	display: inline-block;
+	padding-left: 15px;
+	line-height: 46px;
+}
+nav .logout{
+	display: inline-block;
+	line-height: 46px;
+}
+.user{
+	display: inline-block;
+	float: right;
+	padding-right: 15px;
+}
+nav span{
+	padding-right: 15px;
+	color: #fff;
+}
+.navs{
+	float: left;
+	margin-left: 230px;
+	line-height: 46px;
+}
+.navs a{
+	padding: 0 15px;
+}
+.form-group .save{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	display: block;
+}
+.delete {
+	display: block;
+	width: 100px;
+	line-height: 30px;
+	height: 30px;
+	margin: 15px auto;
+}
+.container{
+	width: 100%;
+	margin-top: 50px;
+}
+.container h2{
+
+}
+.form-container{
+	width: 300px;
+	margin: 0 auto;
+}
+.save-container{
+	width: 320px;
+	margin-top: 40px;
+}
+.save-container p{
+	text-align: center;
+}
+.save-container .delete{
+	height: 34px;
+}
+.img-list{
+	width: 990px;
+	margin: 0 auto;
+}
+.img-list ul {
+	list-style: none;
+	overflow: hidden;
+	width: 990px;
+	padding: 0;
+}
+.img-list li{
+	width: 140px;
+	float: left;
+	box-sizing: border-box;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background: #fff;
+	border-radius: 10px;
+}
+.img-list li i{
+	float: right;
+}
+.img-list li img{
+	width: 100%;
+	height: auto;
+}
+.photoContainer {
+	width: 990px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #fff;
+	height: 300px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.photoContainer img{
+	width: 100%;
+	height: auto;
+	vertical-align: middle;;
+	outline: 0;
+	border: 0;
+}
+.photoContainer p{
+	font-size: 24px;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+.photo-left{
+	width:360px;
+	float: left;
+}
+.photo-right{
+	width: 610px;
+	float: right;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.btn{
+	width: 120px;
+	height: 34px;
+	background: #0f7113;
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 5px;
+	outline: none;
+}
